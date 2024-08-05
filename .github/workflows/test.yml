@@ -15,3 +15,15 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - uses: 0xPolygon/kurtosis-cdk@main
+
+  debug-rachit77-erigon:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: 0xPolygon/kurtosis-cdk@rachit77/erigon
+
+  debug:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: 0xPolygon/kurtosis-cdk@ci/fix-regression-test-action
