@@ -9,10 +9,14 @@ on:
         default: main
 
 jobs:
-  test:
+  latest:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: 0xPolygon/kurtosis-cdk@v0.2.3
 
-      - name: Run kurtosis-cdk action
-        uses: 0xPolygon/kurtosis-cdk@${{ github.event.inputs.version }}
+  main:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: 0xPolygon/kurtosis-cdk@main
