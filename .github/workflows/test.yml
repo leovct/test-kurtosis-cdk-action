@@ -32,4 +32,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: 0xPolygon/kurtosis-cdk@debug.12 # <https://github.com/0xPolygon/kurtosis-cdk/pull/204> leovct:ci/fix-regression-test-action
+      - uses: 0xPolygon/kurtosis-cdk@debug.13 # <https://github.com/0xPolygon/kurtosis-cdk/pull/204> leovct:ci/fix-regression-test-action
